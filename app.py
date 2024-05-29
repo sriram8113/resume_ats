@@ -24,7 +24,7 @@ def input_pdf_setup(uploaded_file):
         with open("temp.pdf", "wb") as f:
             f.write(uploaded_file.getvalue())
 
-        images = convert_from_path("temp.pdf", poppler_path='/path/to/poppler/bin')
+        images = convert_from_path("temp.pdf", poppler_path='poppler-24.02.0\Library\bin')
 
         first_page=images[0]
 
